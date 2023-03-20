@@ -59,6 +59,7 @@ with gr.Blocks() as chatbot:
                     ilosc_klas = len(csv.iloc[0]) - 1
                     for klasa in range(0, ilosc_klas):
                         wersy += str(csv[klasa].value_counts())
+                        wersy += "\n"
                     odpowiedz = wersy
                 else:
                     odpowiedz = "Błąd: plik o podanej nazwie nie istnieje "
